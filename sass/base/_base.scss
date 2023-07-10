@@ -1,0 +1,18 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    //this defines 1rem
+    // https://www.aleksandrhovhannisyan.com/blog/62-5-percent-font-size-trick/ //
+    font-size: 62.5%;
+}
+
+body {
+    
+    box-sizing: border-box;
+}

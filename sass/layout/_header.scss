@@ -1,0 +1,52 @@
+
+
+            /*===================
+                    HERO
+            ====================*/
+
+
+    /*==========================HEADER=================================
+    -> we set the image here.
+    -> linear-gradient used.
+    -> opacity is 80%
+    -> degree of gradient is set it by using "to right bottom"
+    -> background-size: cover => so that image will cover the whole page
+    -> positon of the image set as top center. => image will adjust itself while screen size changes. 
+        it will take top and center as a origin point.
+    -> Clip-path used to give a shape/frame to the image. https://bennettfeely.com/clippy/
+    -> position of the header class given as relative due to logo-box class. 
+    
+    =================================================================*/
+
+    .header {
+        height: 95vh;
+        background-image: linear-gradient(
+            to right bottom,
+            rgba($color-primary-light,0.8),
+            rgba($color-primary-dark,0.8)),
+            url(/Website-Touring/img/hero.jpg);
+        background-size: cover;
+        background-position: top center;
+        clip-path: polygon( 0 0, 100% 0, 100% 75vh, 0 100% );
+        position: relative;
+
+        &__logo-box{
+            position: absolute;
+            top: 4rem;
+            left: 4rem;
+        }
+        
+        &__logo{
+            height: 3.5rem;
+        }
+        &__text-box{
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+    }
+    
+    
+   
